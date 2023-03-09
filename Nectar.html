@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Nectar</title>
+</head>
+<body >
+
+ <center><h1><b>Seleccionaste Nectar</b></h1></center>
+
+    <a href="index.html"> <button>Regresar al menu</button></a>
+
+    <p><center> <br> <label  for="cancion" style="background-color: #cccccc"> Escribe el nombre de la canción </label></br>
+        <input type="text" name="NameE" id="NameE" required="" pattern="[a-zA-Z]+" minlength="5"
+        maxlength="20" placeholder="ejemplo.Ew"><br>
+
+
+    <br><label for="" style="background-color: #cccccc">Escribe el nombre el album al que pertenece</label></br>
+    <input type="text" name="NameE" id="NameE" required="" pattern="[a-zA-Z]+" minlength="5"
+    maxlength="20" placeholder="ejemplo.Nectar"><br>
+
+
+
+    <center><br><label for="" style="background-color: #cccccc">Ingresa la duracion de la canción</label></br>
+        <input type="text" name="fec" id="fec" minlength="2" maxlength="10"
+        placeholder="ejempo.3:22"><br>
+
+
+
+       <p> <center><br><label for="" style="background-color: #cccccc">Fecha de lanzamiento</label></br>
+        <input type="text" name="alb" id="alb" minlength="2" maxlength="10"
+        placeholder="ejempo.120522"><br></p>
+
+        <p><button onclick="guardar()">guardar</button></p>
+        <center><p><button id="borrar-localstorage">Borrar</button></p></center>
+
+
+  <p><center><img src="NITROUS de Joji.jfif" height="200"></center></p>
+  <form><p><b>Selecione una de las canciones que ingreso</b></p><select>
+        <option>Ew</option>
+        <option>Modus</option>
+        <option>Tick Tock</option>
+        <option>Dayligth</option>
+        <option>Upgrade</option>
+        <option>Gimme Love</option>
+        <option>Run</option>
+        <option>Santuary</option>
+        <option>High Hopes</option>
+        <option>Nitrus</option>
+        <option>Prtty Boy</option>
+        <option>Normal People</option>
+        <option>Aftherthought</option>
+        <option>Mr.Hollywood</option>
+        <option>777</option>
+        <option>Reanimator</option>
+        <option>Lie You Do</option>
+        <option>Your Man</option>
+
+    </select>
+
+    <tr>
+        <table class="table" id="Ballads1">
+            <thead>
+                <th>Canción</th>
+                <th>Disco</th>
+                <th>Duracion</th>
+                <th>Lanzamiento</th>
+                
+            </thead>
+            <tbody id="tableBallads"></tbody>
+        </table>
+    </tr>
+    <script src="main.js"></script> 
+    <script src="cancion.js"></script> 
+    <script src="borrar.js"></script>
+</body>
+</html>
