@@ -13,72 +13,61 @@
 </head>
 <body >
 
- <center><h1><b>Seleccionaste Nectar</b></h1></center>
+    <center><h1><b>Seleccionaste Nectar</b></h1></center>
+ <p><center><img src="NITROUS de Joji.jfif" height="200"></center></p>
+ 
+ <center><form id="registro">
+    <h2>¿Quien eres?</h2>
+    <form id="registro">
+<label for="nombre">Escribe tu nombre</label>
+<input type="text" id="nombre" name="nombre" required>
+<br></center>
 
-    <a href="index.html"> <button>Regresar al menu</button></a>
+    <p><a href="index.html"> <button>Regresar al menu</button></a>
+    </p>
 
-    <p><center> <br> <label  for="cancion" style="background-color: #cccccc"> Escribe el nombre de la canción </label></br>
-        <input type="text" name="NameE" id="NameE" required="" pattern="[a-zA-Z]+" minlength="5"
-        maxlength="20" placeholder="ejemplo.Ew"><br>
+    <center><b><label for="cancion">Elije una cancion del album:</label>
+        <p><select id="cancion" name="cancion" required></p></center>
+            <option value="">Canción</option></b></p>
+   
+            <option value="Ew">Ew</option>
+            <option value="Modus">Modus</option>
+            <option value="Tick">Tick Tock</option>
+            <option value="Dayligth">Dayligth</option>
+            <option value="Upgrade">Upgrade</option>
+            <option value="Gimme">Gimme Love</option>
+            <option value="Run">Run</option>
+            <option value="Santuary">Santuary</option>
+            <option value="High">High Hopes</option>
+            <option value="Nitrus">Nitrus</option>
+            <option value="Pretty ">Pretty Boy</option>
+            <option value="Normal">Normal People</option>
+            <option value="Aftherthought">Aftherthought</option>
+            <option value="Mr">Mr.Hollywood</option>
+            <option value="777">777</option>
+            <option value="Reanimator">Reanimator</option>
+            <option value="Lie You Do">Lie You Do</option>
+            <option value="Your Man">Your Man</option>
+            <select></select>
+        <br>
 
 
-    <br><label for="" style="background-color: #cccccc">Escribe el nombre el album al que pertenece</label></br>
-    <input type="text" name="NameE" id="NameE" required="" pattern="[a-zA-Z]+" minlength="5"
-    maxlength="20" placeholder="ejemplo.Nectar"><br>
+      <p><label for="fecha">Cuando se lanzo la cancion?</label></p>
+        <p><input placeholder="Ej.220522" type="text" id="fecha" name="fecha" required></p>
+        <br>
 
 
-
-    <center><br><label for="" style="background-color: #cccccc">Ingresa la duracion de la canción</label></br>
-        <input type="text" name="fec" id="fec" minlength="2" maxlength="10"
-        placeholder="ejempo.3:22"><br>
-
-
-
-       <p> <center><br><label for="" style="background-color: #cccccc">Fecha de lanzamiento</label></br>
-        <input type="text" name="alb" id="alb" minlength="2" maxlength="10"
-        placeholder="ejempo.120522"><br></p>
-
-        <p><button onclick="guardar()">guardar</button></p>
-        <center><p><button id="borrar-localstorage">Borrar</button></p></center>
-
-
-  <p><center><img src="NITROUS de Joji.jfif" height="200"></center></p>
-  <form><p><b>Selecione una de las canciones que ingreso</b></p><select>
-        <option>Ew</option>
-        <option>Modus</option>
-        <option>Tick Tock</option>
-        <option>Dayligth</option>
-        <option>Upgrade</option>
-        <option>Gimme Love</option>
-        <option>Run</option>
-        <option>Santuary</option>
-        <option>High Hopes</option>
-        <option>Nitrus</option>
-        <option>Prtty Boy</option>
-        <option>Normal People</option>
-        <option>Aftherthought</option>
-        <option>Mr.Hollywood</option>
-        <option>777</option>
-        <option>Reanimator</option>
-        <option>Lie You Do</option>
-        <option>Your Man</option>
-
-    </select>
-
-    <tr>
-        <table class="table" id="Ballads1">
-            <thead>
-                <th>Canción</th>
-                <th>Disco</th>
-                <th>Duracion</th>
-                <th>Lanzamiento</th>
-                
-            </thead>
-            <tbody id="tableBallads"></tbody>
-        </table>
-    </tr>
+        
+      <button type="submit">Enviar selección</button>
+      <h3><b>Estos son los datos que ingresaste</b></h3>
+      </form>
+      <ul id="nombres"></ul>
+    
     <script src="main.js"></script> 
     <script src="cancion.js"></script> 
-    <script src="borrar.js"></script>
+    <script src="guardarcan.js"></script>
+    <script src="guardarca.js"></script>
+    
+    
 </body>
 </html>

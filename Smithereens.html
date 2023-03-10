@@ -11,64 +11,54 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Smithereens</title>
 </head>
-<body >
+<body bgcolor="#FFFFFF">
 
- <center><h1><b>Seleccionaste Smithereens</b></h1></center>
+    <center><h1><b>Seleccionaste Smithereens</b></h1></center>
+    <p><center><img src="smethereens.webp" height="200"></center></p>
+    
+    <center><form id="registro">
+       <h2>¿Quien eres?</h2>
+       <form id="registro">
+   <label for="nombre">Escribe tu nombre</label>
+   <input type="text" id="nombre" name="nombre" required>
+   <br></center>
+   
+       <p><a href="index.html"> <button>Regresar al menu</button></a>
+       </p>
+   
+       <center><b><label for="cancion">Elije una cancion del album:</label>
+           <p><select id="cancion" name="cancion" required></p></center>
+            <option value="">Canción</option></b></p>
 
-    <a href="index.html"> <button>Regresar al menu</button></a>
-
-    <b><p><center> <br> <label  for="cancion" style="background-color: #cccccc"> Escribe el nombre de la canción </label></br></b>
-        <input type="text" name="can" id="can" required="" pattern="[a-zA-Z]+" minlength="5"
-        maxlength="20" placeholder="ejemplo.Die For You"><br>
-
-
-    <b><br><label for="" style="background-color: #cccccc">Escribe el nombre el album al que pertenece</label></br></b>
-    <input type="text" name="min" id="min" required="" pattern="[a-zA-Z]+" minlength="5"
-    maxlength="20" placeholder="ejemplo.Smithereens"><br>
-
-
-
-    <b><center><br><label for="" style="background-color: #cccccc">Ingresa la duracion de la canción</label></br></b>
-        <input type="text" name="fec" id="fec" minlength="2" maxlength="10"
-        placeholder="ejempo.3:22"><br>
-
-
-
-       <b><p> <center><br><label for="" style="background-color: #cccccc">Fecha de lanzamiento</label></br></b>
-        <input type="text" name="alb" id="alb" minlength="2" maxlength="10"
-        placeholder="ejempo.120522"><br></p>
-
-        <p><button onclick="guardar()">guardar</button></p>
-        <center><p><button id="borrar-localstorage">Borrar</button></p></center>
-        
-
-  <center><img src="smethereens.webp" height="200"></center>
-  <form><p><b>Selecione una de las canciones que ingreso</b></p><select>
-        <option>Glimpse Of Us</option>
-        <option>Feeling Like The End</option>
-        <option>Die For You</option>
-        <option>Before the Day Is Over</option>
-        <option>Dissolve</option>
-        <option>Nigth Rider</option>
-        <option>BLAHBLAHBLAH DEMO</option>
-        <option>YOUKON</option>
-        <option>1AM FREESTYLE</option>
-    </select>
-
-    <tr>
-        <table class="table" id="Ballads1">
-            <thead>
-                <th>Canción</th>
-                <th>Disco</th>
-                <th>Duracion</th>
-                <th>Lanzamiento</th>
-                
-            </thead>
-            <tbody id="tableBallads"></tbody>
-        </table>
-    </tr>
-    <script src="main.js"></script> 
-    <script src="cancion.js"></script> 
-    <script src="borrar.js"></script>
+          <option value="Glimpse">Glimpse Of Us</option>
+          <option value="Feeling">Feeling Like The End</option>
+          <option value="Die">Die For You</option>
+          <option value="Before">Before the Day Is Over</option>
+          <option value="Dissolve">Dissolve</option>
+          <option value="Nigth">Nigth Rider</option>
+          <option value="BLAHBLAHBLAH">BLAHBLAHBLAH DEMO</option>
+          <option value="YOUKON">YOUKON</option>
+          <option value="1AM">1AM FREESTYLE</option>
+          </select>
+           <br>
+   
+   
+         <p><label for="fecha">Cuando se lanzo la cancion?</label></p>
+           <p><input placeholder="Ej.220522" type="text" id="fecha" name="fecha" required></p>
+           <br>
+   
+   
+           
+         <button type="submit">Enviar selección</button>
+         </form>
+         <h3><b>Estos son los datos que ingresaste</b></h3>
+         <ul id="nombres"></ul>
+         
+         
+         
+       <script src="main.js"></script> 
+       <script src="cancion.js"></script> 
+       <script src="guardarcan.js"></script>
+     
 </body>
 </html>
